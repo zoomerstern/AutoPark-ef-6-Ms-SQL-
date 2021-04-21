@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoPark", "AutoPark\AutoPark.csproj", "{88ECE06A-F18A-444F-98A4-0B36E5B85A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEF6Db", "MyEF6Db\MyEF6Db.csproj", "{89F44B03-DA71-41E7-B607-354FAFFF1ACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88ECE06A-F18A-444F-98A4-0B36E5B85A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ECE06A-F18A-444F-98A4-0B36E5B85A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ECE06A-F18A-444F-98A4-0B36E5B85A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ECE06A-F18A-444F-98A4-0B36E5B85A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F44B03-DA71-41E7-B607-354FAFFF1ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F44B03-DA71-41E7-B607-354FAFFF1ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F44B03-DA71-41E7-B607-354FAFFF1ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F44B03-DA71-41E7-B607-354FAFFF1ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31FE2D1F-5641-4DCE-98E8-AB3010BDB400}
+	EndGlobalSection
+EndGlobal
