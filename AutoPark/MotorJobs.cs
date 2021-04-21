@@ -45,7 +45,7 @@ namespace AutoPark
             
             using (ParkContext Park = new ParkContext())
             {//Выводим моторы
-                foreach (TypeJob job in Park.Motors.Where(x => x.Id == imotor).FirstOrDefault().TypeJob.ToList()) //Запись данных об работах над моторм
+                foreach (TypeJob job in Park.Motors.Where(x => x.Id == imotor).FirstOrDefault().TypeJob.ToList()) //Вывод типов работ соответвующего мотора
                 {
                     dataGridView1.Rows.Add(new string[] { job.Id.ToString(), job.Name });
                 }
@@ -179,7 +179,7 @@ namespace AutoPark
 
                 TypeJob currtype = Park.TypeJobs.Where(x => x.Id == ijob).FirstOrDefault();
                 if (currtype != null)
-                {
+                {//Если мотор есть, редактируем его тип работы
                     currtype.Name = tEjob.Text.ToString();
                     Park.Entry(currtype).State = EntityState.Modified;
                     Park.SaveChanges();
@@ -200,9 +200,9 @@ namespace AutoPark
 
                 TypeJob currtype = Park.TypeJobs.Where(x => x.Id == ijob).FirstOrDefault();
                 if (currtype != null)
-                {
-                    Park.Jobs.RemoveRange(currtype.Job);
-                    Park.TypeJobs.Remove(currtype);
+                {//Если этот тип потора есть 
+                    Park.Jobs.RemoveRange(currtype.Job);//Удалем работы
+                    Park.TypeJobs.Remove(currtype);//И затем тип работы
                     Park.SaveChanges();
                 }
             }
